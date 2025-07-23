@@ -83,6 +83,18 @@
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .gallery-item {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
@@ -127,7 +139,11 @@
 .info-item {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.33;
+letter-spacing: 0.04em;
 }
 
 .label {
